@@ -32,4 +32,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  }).config(function($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
   });
