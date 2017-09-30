@@ -8,7 +8,9 @@
  * Controller of the baldBritneyApp
  */
 angular.module('baldBritneyApp')
-  .controller('MainCtrl',['$scope', function ($scope) {
+  .controller('LoginCtrl',['$scope', function ($scope) {
+    $scope.loggedIn = false;
+
     $scope.authorize = function() {
       var clientId = 'e2b2a53b1aa34ac2ac1dbee3068a740d';
       var redirectUri = 'http://localhost:9000';
